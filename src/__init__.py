@@ -26,7 +26,7 @@ class TextEmergencySkill(OVOSSkill):
     def initialize(self):
         self.settings.merge(DEFAULT_SETTINGS, new_only=True)
         self.add_event('recognizer_loop:hotword', self.handle_text_help)
-        #self.add_event('text.emergency', self.handle_text_help) Does not work
+        self.add_event('text.emergency', self.handle_text_help)
         phone = SIM7600X() # instance of cellular module
 
     @classproperty
