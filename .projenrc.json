@@ -1,4 +1,9 @@
 {
   "type": "@mikejgray/ovos-skill-projen.OVOSSkillProject",
-  "name": "skill-r2arc-text-emergency"
+  "name": "skill-r2arc-text-emergency",
+  "author": "Michelle T.",
+  "authorAddress": "michelle.tran02@student.csulb.edu",
+  "authorHandle": "mushie4282",
+  "skillClass": "TextEmergencySkill",
+  "repositoryUrl": "https://github.com/SeniorDesign-RC-LB/skill-r2arc-text"
 }
