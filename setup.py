@@ -3,8 +3,8 @@ from setuptools import setup
 from os import walk, path
 
 BASEDIR = path.abspath(path.dirname(__file__))
-URL = "TODO: Add 'repositoryUrl' to .projenrc.json and run pj"
-SKILL_CLAZZ = "TODO: Add 'skillClass' to .projenrc.json and run pj"  # needs to match __init__.py class name
+URL = "https://github.com/SeniorDesign-RC-LB/skill-r2arc-text"
+SKILL_CLAZZ = "TextEmergencySkill"  # needs to match __init__.py class name
 PYPI_NAME = "skill-r2arc-text-emergency"  # pip install PYPI_NAME
 
 # below derived from github url to ensure standard skill_id
@@ -69,7 +69,7 @@ setup(
     long_description_content_type="text/markdown",
     url=URL,
     author="TODO: Add 'author' to .projenrc.json and run pj",
-    author_email="TODO: Add 'authorAddress' to .projenrc.json and run pj",
+    author_email="michelle.tran02@student.csulb.edu",
     license="# TODO: Add 'license' to .projenrc.json and run pj",
     package_dir={SKILL_PKG: "src"},
     package_data={SKILL_PKG: find_resource_files()},
