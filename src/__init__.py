@@ -13,15 +13,15 @@ DEFAULT_SETTINGS = {
 }
 
 class TextEmergencySkill(OVOSSkill):
-    def __init__(self, *args, bus=None, **kwargs):
-        super().__init__(*args, bus=bus, **kwargs)
+    def __init__(self, *args, skill_id=None, bus=None, **kwargs):
+        super().__init__(*args, skill_id=skill_id, bus=bus, **kwargs)
         self.learning = True
 
     def initialize(self):
         self.settings.merge(DEFAULT_SETTINGS, new_only=True)
-	self.add_event('recognizer_loop:hotword', self.handle_text_help)
-	self.add_event('bus_event', self.handle_text_help)
-	# add instance of cellular module
+        self.add_event('recognizer_loop:hotword', self.handle_text_help)
+        self.add_event('bus_event', self.handle_text_help)
+	    # add instance of cellular module
 
     @classproperty
     def runtime_requirements(self):
