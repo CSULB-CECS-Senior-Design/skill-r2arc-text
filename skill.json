@@ -1,1 +1,42 @@
-{}
+{
+    "title": "",
+    "url": "https://github.com/SeniorDesign-RC-LB/skill-r2arc-text",
+    "summary": "",
+    "short_description": null,
+    "description": "The skill should send a text to a phone number when the user says the word emergency.",
+    "examples": [],
+    "desktopFile": false,
+    "warning": "",
+    "systemDeps": false,
+    "requirements": {
+        "python": [
+            "ovos-bus-client",
+            "ovos-plugin-manager",
+            "ovos-utils",
+            "ovos-workshop"
+        ],
+        "system": {},
+        "skill": []
+    },
+    "incompatible_skills": [],
+    "platforms": [
+        "i386",
+        "x86_64",
+        "ia64",
+        "arm64",
+        "arm"
+    ],
+    "branch": "master",
+    "license": "Unknown",
+    "icon": "",
+    "category": "",
+    "categories": [],
+    "tags": [
+        "ovos skill"
+    ],
+    "credits": [],
+    "skillname": "skill-r2arc-text",
+    "authorname": "SeniorDesign-RC-LB",
+    "foldername": null,
+    "simple ovos texting skill": "Introductory Skill so that Skill Authors can see how an OVOS Skill is put together"
+}
