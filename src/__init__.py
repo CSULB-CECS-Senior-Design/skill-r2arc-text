@@ -5,6 +5,12 @@ from ovos_utils.process_utils import RuntimeRequirements
 # from ovos_workshop.intents import IntentHandler # Uncomment to use Adapt intents
 from ovos_workshop.skills import OVOSSkill
 
+import sys
+from os.path import expanduser
+home = expanduser("~")
+sys.path.append(home)
+from SMS import SIM7600X
+
 # Optional - if you want to populate settings.json with default values, do so here
 DEFAULT_SETTINGS = {
     "setting1": True,
@@ -20,8 +26,8 @@ class TextEmergencySkill(OVOSSkill):
     def initialize(self):
         self.settings.merge(DEFAULT_SETTINGS, new_only=True)
         self.add_event('recognizer_loop:hotword', self.handle_text_help)
-        self.add_event('bus_event', self.handle_text_help)
-	    # add instance of cellular module
+        #self.add_event('text.emergency', self.handle_text_help) Does not work
+        phone = SIM7600X() # instance of cellular module
 
     @classproperty
     def runtime_requirements(self):
@@ -47,6 +53,8 @@ class TextEmergencySkill(OVOSSkill):
 
     def handle_text_help(self, message):
         self.speak("Contacting emergency services right now")
+        self.speak("This is from skill r 2 arck text skill")
+        #phone.send_short_message("Send help to CSULB ASAP")
 
     def stop(self):
         return
