@@ -1,24 +1,10 @@
-# OVOSSkill
+# Simple OVOS Texting Skill
 
 Introductory Skill so that Skill Authors can see how an OVOS Skill is put together
 
 ## About
 
-Information about your skill
-
-## Examples
-
-- "Hello world"
-- "How are you?"
-- "Thank you"
-
-## Credits
-
-authorName (@githubUsername)
-
-## Category
-
-TODO:
+The skill should send a text to a phone number when the user says the word emergency.
 
 ## Tags
 
