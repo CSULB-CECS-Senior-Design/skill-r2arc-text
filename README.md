@@ -21,5 +21,5 @@ In order to enable SMS ability, you need a cellular module. So far this skill wo
 The skill send a text to a phone number when the user says the word emergency.
 
 ## Credits
-Michelle Tran
-Mike Gray's skill generator - https://github.com/mikejgray/ovos-skill-projen
+- Michelle Tran
+- Mike Gray's skill generator - https://github.com/mikejgray/ovos-skill-projen
